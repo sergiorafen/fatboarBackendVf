@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="10" assertions="20" errors="1" failures="2" skipped="0" time="1.141452">
+    <testsuite name="App\Tests\Func\TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\TicketTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.848000">
+      <testcase name="testTickets" class="App\Tests\Func\TicketTest" classname="App.Tests.Func.TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\TicketTest.php" line="12" assertions="1" time="0.848000">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\Func\TicketTest::testTickets
+Failed asserting that 404 matches expected 200.
+
+C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\TicketTest.php:18
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Tests\Func\UserFuncTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\UserFuncTest.php" tests="2" assertions="1" errors="1" failures="1" skipped="0" time="0.282447">
+      <testcase name="testGetUsers" class="App\Tests\Func\UserFuncTest" classname="App.Tests.Func.UserFuncTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\UserFuncTest.php" line="16" assertions="1" time="0.281504">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\Func\UserFuncTest::testGetUsers
+Failed asserting that 404 matches expected 200.
+
+C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\UserFuncTest.php:21
+</failure>
+      </testcase>
+      <testcase name="testPostUsers" class="App\Tests\Func\UserFuncTest" classname="App.Tests.Func.UserFuncTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\UserFuncTest.php" line="26" assertions="0" time="0.000943">
+        <error type="Error">App\Tests\Func\UserFuncTest::testPostUsers
+Error: Class 'Faker\Factory' not found
+
+C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\UserFuncTest.php:46
+C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Func\UserFuncTest.php:31
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Tests\Unit\TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\TicketTest.php" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.008061">
+      <testcase name="testGetNumoTicket" class="App\Tests\Unit\TicketTest" classname="App.Tests.Unit.TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\TicketTest.php" line="18" assertions="2" time="0.001796"/>
+      <testcase name="testGetDatepublished" class="App\Tests\Unit\TicketTest" classname="App.Tests.Unit.TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\TicketTest.php" line="28" assertions="2" time="0.000117"/>
+      <testcase name="testGetTicketlot" class="App\Tests\Unit\TicketTest" classname="App.Tests.Unit.TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\TicketTest.php" line="38" assertions="2" time="0.002733"/>
+      <testcase name="testgetUser" class="App\Tests\Unit\TicketTest" classname="App.Tests.Unit.TicketTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\TicketTest.php" line="48" assertions="2" time="0.003415"/>
+    </testsuite>
+    <testsuite name="App\Tests\Unit\UserTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\UserTest.php" tests="3" assertions="10" errors="0" failures="0" skipped="0" time="0.002944">
+      <testcase name="testGetEmail" class="App\Tests\Unit\UserTest" classname="App.Tests.Unit.UserTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\UserTest.php" line="17" assertions="2" time="0.000061"/>
+      <testcase name="testGetPassword" class="App\Tests\Unit\UserTest" classname="App.Tests.Unit.UserTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\UserTest.php" line="37" assertions="2" time="0.000970"/>
+      <testcase name="testGetTicket" class="App\Tests\Unit\UserTest" classname="App.Tests.Unit.UserTest" file="C:\wamp\www\Fatboar\BackEnd\fatBoarBackEndVF\fatboarBackend\tests\Unit\UserTest.php" line="47" assertions="6" time="0.001913"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

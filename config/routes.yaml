@@ -1,0 +1,16 @@
+register:
+    path: /register
+    controller: App\Controller\AuthController::register
+    methods: POST
+
+apitest:
+    path: /apitest
+    controller: App\Controller\AuthController::apitest
+
+login_check:
+    path:     /login_check
+    methods:  [POST]
+
+admin:
+    path: /api/fatboar/admin
+    controller: App\Controller\AdminController::ManageCashier
