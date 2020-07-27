@@ -17,7 +17,7 @@ class UserRepositoryTest extends KernelTestCase
             __DIR__ . '/UserRepositoryTestFixtures.yaml'
         ]);
         $users = self::$container->get(UserRepository::class)->count([]);
-        $this->assertEquals(10, $users);
+        $this->assertEquals(15, $users);
     }
 
 }

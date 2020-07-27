@@ -2,7 +2,7 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Article;
+use App\Entity\Ticket;
 use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -11,7 +11,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AppFixtures extends Fixture{
 
-    const DEFAULT_USER=['email'=>'rafensergio@gmail.com','password'=>'password'];
+    const DEFAULT_USER=['email'=>'john_user@gmail.com','password'=>'test'];
     private  $encoder;
     
     public function __construct (UserPasswordEncoderInterface $encoder){
@@ -37,8 +37,14 @@ class AppFixtures extends Fixture{
             }
             $manager->persist($user);
 
+            for($i=0;$i<random_int(5,15);$i++){
+                $ticket=(new Ticket())->setUser($user)
+                ->setNom($fake->text(300))
+                ->setEmail($fake->text(50));
+                $manager->persist($ticket);
+            }
         }
-        
+        $manager->flush();
     }
 
 }

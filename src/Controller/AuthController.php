@@ -29,7 +29,7 @@ class AuthController extends AbstractController
         if (filter_var($email  , FILTER_VALIDATE_EMAIL)) {
               $user->setEmail($email);
         } else {
-            return new Response(sprintf($email.' email invalide'));
+            return new Response(sprintf($email.' email invalide pour l inscription'));
         }
         //$user->setNom($nom);
         $user->setUsername($username);

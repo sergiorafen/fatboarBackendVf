@@ -1,8 +1,32 @@
 App\Entity\User:
-    user{1..10}:
-        email: user<current()>\@domain.fr
+    user{1..15}:
+        username: john_user_<current()>
+        nom: doe_<current()>
+        email: john_user<current()>\@gmail.fr
         password: "0000"
         is_active: true
         newsletter: true
         majeur: true
+        cgvcgu: true
         roles: ['ROLE_USER']
+
+    user{1..5}:
+        username: jane_cashier_<current()>
+        nom: doe_<current()>
+        email: jane_cashier<current()>\@gmail.fr
+        password: "0000"
+        is_active: true
+        newsletter: true
+        majeur: true
+        cgvcgu: true
+        roles: ['ROLE_CASHIER']
+
+App\Entity\Lot:
+    lot{1..15}:
+        libelletlot: Dessert
+        imgurl: test
+
+    lot{1..5}:
+        libelletlot: Reduction
+        imgurl: test
+
