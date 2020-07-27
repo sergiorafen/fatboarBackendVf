@@ -29,4 +29,3 @@ App\Entity\Lot:
     lot{1..5}:
         libelletlot: Reduction
         imgurl: test
-
