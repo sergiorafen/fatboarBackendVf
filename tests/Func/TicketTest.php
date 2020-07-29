@@ -13,7 +13,7 @@ class TicketTest extends AbstractEndPoint{
 
         $response=$this->getResponseFromRequest(
             Request::METHOD_GET,
-            '/api/fatboar/tickets',
+            '/api/fatboar/tickets'.'.json',
             '',
              [],
              true
@@ -41,7 +41,7 @@ class TicketTest extends AbstractEndPoint{
         }';
         $response=$this->getResponseFromRequest(
             Request::METHOD_POST,
-            '/api/fatboar/tickets',
+            '/api/fatboar/tickets'.'.json',
             $unTicket,
              [],
              true
@@ -65,7 +65,7 @@ class TicketTest extends AbstractEndPoint{
         }';
         $response=$this->getResponseFromRequest(
             Request::METHOD_PUT,
-            '/api/fatboar/tickets/'.$id,
+            '/api/fatboar/tickets/'.$id.'.json',
             $NewEtat,
              [],
              true
@@ -85,7 +85,7 @@ class TicketTest extends AbstractEndPoint{
        
         $response=$this->getResponseFromRequest(
             Request::METHOD_DELETE,
-            '/api/fatboar/tickets/'.$id,
+            '/api/fatboar/tickets/'.$id.'.json',
             '',
              [],
              true

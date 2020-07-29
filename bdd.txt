@@ -5,3 +5,8 @@ INSERT INTO `ticket`(`user_id`,`ticketlot_id`,`numoticket`, `totalprice`, `etat`
 (1,2,12336,30,'DISPONIBLE')
 
 INSERT INTO `lot`(`libelletlot`,`imgurl`) VALUES ('burger','test'),('menu','test')
+
+INSERT INTO `user` (`id`, `username`, `password`, `is_active`, `nom`, `email`, `cgvcgu`, `newsletter`, `majeur`, `roles`) 
+VALUES
+(16, 'sergio_cashier', '$2y$13$gmWNEiSbzr3aCNyl2CYsFua1fVFVgis/0iTQnmDDwod6pofWx7u7e',
+ 1, NULL, 'sergio_cashier@gmail.com', 1, 1, 1, '[\"ROLE_CASHIER\"]')

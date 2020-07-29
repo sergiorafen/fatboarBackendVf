@@ -29,9 +29,10 @@ use App\DataFixtures\AppFixtures;
 
        $client=$this->createAuthentificationClient($withAuthentification);
        //Marche bien jusqu'à là
+
        $client->request(
            $method,
-           $uri.'.json',
+           $uri,
            [],
            $parameter,
            $this->serverInformations,
